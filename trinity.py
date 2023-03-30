@@ -5,9 +5,9 @@ from PIL import Image, ImageTk
 import random
 import sqlite3
 
-image1 = 'library.png'
-image2 = 'image2.png'
-image3 = 'finance.png'
+image1 = 'library.jpg'
+image2 = 'image2.jpg'
+image3 = 'finance.jpg'
 
 
 # pip install Pillow
