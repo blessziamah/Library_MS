@@ -35,9 +35,9 @@ class menu:
 		conn.commit()
 		conn.close()
 		self.a = self.canvases(image1)
-		l1 = Button(self.a, text='BOOK DATA', font='Papyrus 22 bold', fg='Yellow', bg='Black', width=19, padx=10,
+		l1 = Button(self.a, text='BOOK DATA', font='goudy 22 bold', fg='Yellow', bg='Black', width=19, padx=10,
 					borderwidth=0, command=self.book).place(x=100, y=500)
-		l2 = Button(self.a, text='STUDENT DATA', font='Papyrus 22 bold', fg='Yellow', bg='Black', width=19, padx=10,
+		l2 = Button(self.a, text='STUDENT DATA', font='goudy 22 bold', fg='Yellow', bg='Black', width=19, padx=10,
 					borderwidth=0, command=self.student).place(x=800, y=500)
 		self.root.mainloop()
 
@@ -60,14 +60,14 @@ class menu:
 	def book(self):
 		self.a.destroy()
 		self.a = self.canvases(image2)
-		l1 = Button(self.a, text='Add Books', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l1 = Button(self.a, text='Add Books', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.addbook).place(x=12, y=100)
-		l2 = Button(self.a, text='Search Books', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l2 = Button(self.a, text='Search Books', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.search).place(x=12, y=200)
 
-		l4 = Button(self.a, text='All Books', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l4 = Button(self.a, text='All Books', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.all).place(x=12, y=300)
-		l4 = Button(self.a, text='<< Main Menu', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l4 = Button(self.a, text='<< Main Menu', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.mainmenu).place(x=12, y=500)
 
 	def addbook(self):
@@ -79,26 +79,26 @@ class menu:
 		self.aloc = StringVar()
 		self.f1 = Frame(self.a, height=500, width=650, bg='black')
 		self.f1.place(x=500, y=100)
-		l1 = Label(self.f1, text='Book ID : ', font='Papyrus 12 bold', fg='Orange', bg='Black', pady=1).place(x=50,
+		l1 = Label(self.f1, text='Book ID : ', font='goudy 12 bold', fg='Orange', bg='Black', pady=1).place(x=50,
 																											  y=50)
 		e1 = Entry(self.f1, width=45, bg='orange', fg='black', textvariable=self.aid).place(x=150, y=50)
-		l2 = Label(self.f1, text='Title : ', font='Papyrus 12 bold', fg='Orange', bg='Black', pady=1).place(x=50, y=100)
+		l2 = Label(self.f1, text='Title : ', font='goudy 12 bold', fg='Orange', bg='Black', pady=1).place(x=50, y=100)
 		e2 = Entry(self.f1, width=45, bg='orange', fg='black', textvariable=self.aname).place(x=150, y=100)
-		l3 = Label(self.f1, text='Author : ', font='Papyrus 12 bold', fg='orange', bg='Black', pady=1).place(x=50,
+		l3 = Label(self.f1, text='Author : ', font='goudy 12 bold', fg='orange', bg='Black', pady=1).place(x=50,
 																											 y=150)
 		e3 = Entry(self.f1, width=45, bg='orange', fg='black', textvariable=self.aauthor).place(x=150, y=150)
-		l4 = Label(self.f1, text='Genre : ', font='Papyrus 12 bold', fg='orange', bg='Black', pady=1).place(x=50, y=200)
+		l4 = Label(self.f1, text='Genre : ', font='goudy 12 bold', fg='orange', bg='Black', pady=1).place(x=50, y=200)
 		e2 = Entry(self.f1, width=45, bg='orange', fg='black', textvariable=self.agenre).place(x=150, y=200)
-		l4 = Label(self.f1, text='Copies : ', font='Papyrus 12 bold', fg='orange', bg='Black', pady=1).place(x=50,
+		l4 = Label(self.f1, text='Copies : ', font='goudy 12 bold', fg='orange', bg='Black', pady=1).place(x=50,
 																											 y=250)
 		e2 = Entry(self.f1, width=45, bg='orange', fg='black', textvariable=self.acopies).place(x=150, y=250)
-		l5 = Label(self.f1, text='Location : ', font='Papyrus 12 bold', fg='orange', bg='Black', pady=1).place(x=50,
+		l5 = Label(self.f1, text='Location : ', font='goudy 12 bold', fg='orange', bg='Black', pady=1).place(x=50,
 																											   y=300)
 		e3 = Entry(self.f1, width=45, bg='orange', fg='black', textvariable=self.aloc).place(x=150, y=300)
 		self.f1.grid_propagate(0)
-		b1 = Button(self.f1, text='Add', font='Papyrus 10 bold', fg='black', bg='orange', width=15, bd=3,
+		b1 = Button(self.f1, text='Add', font='goudy 10 bold', fg='black', bg='orange', width=15, bd=3,
 					command=self.adddata).place(x=150, y=400)
-		b2 = Button(self.f1, text='Back', font='Papyrus 10 bold', fg='black', bg='orange', width=15, bd=3,
+		b2 = Button(self.f1, text='Back', font='goudy 10 bold', fg='black', bg='orange', width=15, bd=3,
 					command=self.rm).place(x=350, y=400)
 
 	def rm(self):
@@ -135,12 +135,12 @@ class menu:
 		self.sid = StringVar()
 		self.f1 = Frame(self.a, height=500, width=650, bg='black')
 		self.f1.place(x=500, y=100)
-		l1 = Label(self.f1, text='Book ID/Title/Author/Genre: ', font=('Papyrus 10 bold'), bd=2, fg='orange',
+		l1 = Label(self.f1, text='Book ID/Title/Author/Genre: ', font=('goudy 10 bold'), bd=2, fg='orange',
 				   bg='black').place(x=20, y=40)
 		e1 = Entry(self.f1, width=25, bd=5, bg='orange', fg='black', textvariable=self.sid).place(x=260, y=40)
-		b1 = Button(self.f1, text='Search', bg='orange', font='Papyrus 10 bold', width=9, bd=2,
+		b1 = Button(self.f1, text='Search', bg='orange', font='goudy 10 bold', width=9, bd=2,
 					command=self.serch1).place(x=500, y=37)
-		b1 = Button(self.f1, text='Back', bg='orange', font='Papyrus 10 bold', width=10, bd=2, command=self.rm).place(
+		b1 = Button(self.f1, text='Back', bg='orange', font='goudy 10 bold', width=10, bd=2, command=self.rm).place(
 			x=250, y=450)
 
 	def create_tree(self, plc, lists):
@@ -172,7 +172,7 @@ class menu:
 				self.variable = StringVar(self.f1)
 				self.variable.set("Select Action:")
 
-				self.cm = ttk.Combobox(self.f1, textvariable=self.variable, state='readonly', font='Papyrus 15 bold',
+				self.cm = ttk.Combobox(self.f1, textvariable=self.variable, state='readonly', font='goudy 15 bold',
 									   height=50, width=15, )
 				self.cm.config(values=('Add Copies', 'Delete Copies', 'Delete Book'))
 
@@ -191,7 +191,7 @@ class menu:
 
 	def combo(self, event):
 		self.var_Selected = self.cm.current()
-		# l7=Label(self.f1,text='copies to update: ',font='Papyrus 10 bold',bd=1).place(x=250,y=700)
+		# l7=Label(self.f1,text='copies to update: ',font='goudy 10 bold',bd=1).place(x=250,y=700)
 		if self.var_Selected == 0:
 			self.copies(self.var_Selected)
 		elif self.var_Selected == 1:
@@ -204,7 +204,7 @@ class menu:
 			self.curItem = self.trees.focus()
 
 			self.c1 = self.trees.item(self.curItem, "values")[0]
-			b1 = Button(self.f1, text='Update', font='Papyrus 10 bold', width=9, bd=3, command=self.delete2).place(
+			b1 = Button(self.f1, text='Update', font='goudy 10 bold', width=9, bd=3, command=self.delete2).place(
 				x=500, y=97)
 
 		except:
@@ -233,10 +233,10 @@ class menu:
 			self.e5 = Entry(self.f1, width=20, textvariable=self.scop)
 			self.e5.place(x=310, y=100)
 			if varr == 0:
-				b5 = Button(self.f1, text='Update', font='Papyrus 10 bold', bg='orange', fg='black', width=9, bd=3,
+				b5 = Button(self.f1, text='Update', font='goudy 10 bold', bg='orange', fg='black', width=9, bd=3,
 							command=self.copiesadd).place(x=500, y=97)
 			if varr == 1:
-				b6 = Button(self.f1, text='Update', font='Papyrus 10 bold', bg='orange', fg='black', width=9, bd=3,
+				b6 = Button(self.f1, text='Update', font='goudy 10 bold', bg='orange', fg='black', width=9, bd=3,
 							command=self.copiesdelete).place(x=500, y=97)
 		except:
 			messagebox.showinfo("Empty", "Please select something.")
@@ -294,13 +294,13 @@ class menu:
 	def student(self):
 		self.a.destroy()
 		self.a = self.canvases(image2)
-		l1 = Button(self.a, text='Issue book', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l1 = Button(self.a, text='Issue book', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.issue).place(x=12, y=100)
-		l2 = Button(self.a, text='Return Book', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l2 = Button(self.a, text='Return Book', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.returnn).place(x=12, y=200)
-		l3 = Button(self.a, text='Student Activity', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l3 = Button(self.a, text='Student Activity', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.activity).place(x=12, y=300)
-		l4 = Button(self.a, text='<< Main Menu', font='Papyrus 22 bold', fg='Orange', bg='Black', width=15, padx=10,
+		l4 = Button(self.a, text='<< Main Menu', font='goudy 22 bold', fg='Orange', bg='Black', width=15, padx=10,
 					command=self.mainmenu).place(x=12, y=600)
 
 	def issue(self):
@@ -308,13 +308,13 @@ class menu:
 		self.astudentt = StringVar()
 		self.f1 = Frame(self.a, height=550, width=500, bg='black')
 		self.f1.place(x=500, y=100)
-		l1 = Label(self.f1, text='Book ID : ', font='papyrus 15 bold', bg='black', fg='orange').place(x=50, y=100)
+		l1 = Label(self.f1, text='Book ID : ', font='goudy 15 bold', bg='black', fg='orange').place(x=50, y=100)
 		e1 = Entry(self.f1, width=25, bd=4, bg='orange', textvariable=self.aidd).place(x=180, y=100)
-		l2 = Label(self.f1, text='Student Id : ', font='papyrus 15 bold', bg='black', fg='orange').place(x=50, y=150)
+		l2 = Label(self.f1, text='Student Id : ', font='goudy 15 bold', bg='black', fg='orange').place(x=50, y=150)
 		e2 = Entry(self.f1, width=25, bd=4, bg='orange', textvariable=self.astudentt).place(x=180, y=150)
-		b1 = Button(self.f1, text='Back', font='Papyrus 10 bold', fg='black', bg='orange', width=10, bd=3,
+		b1 = Button(self.f1, text='Back', font='goudy 10 bold', fg='black', bg='orange', width=10, bd=3,
 					command=self.rm).place(x=50, y=250)
-		b1 = Button(self.f1, text='Issue', font='Papyrus 10 bold', fg='black', bg='orange', width=10, bd=3,
+		b1 = Button(self.f1, text='Issue', font='goudy 10 bold', fg='black', bg='orange', width=10, bd=3,
 					command=self.issuedbook).place(x=200, y=250)
 
 	def issuedbook(self):
@@ -353,13 +353,13 @@ class menu:
 
 		self.f1 = Frame(self.a, height=550, width=500, bg='black')
 		self.f1.place(x=500, y=100)
-		l1 = Label(self.f1, text='Book ID : ', font='papyrus 15 bold', fg='orange', bg='black').place(x=50, y=100)
+		l1 = Label(self.f1, text='Book ID : ', font='goudy 15 bold', fg='orange', bg='black').place(x=50, y=100)
 		e1 = Entry(self.f1, width=25, bd=4, bg='orange', textvariable=self.aidd).place(x=180, y=100)
-		l2 = Label(self.f1, text='Student Id : ', font='papyrus 15 bold', fg='orange', bg='black').place(x=50, y=150)
+		l2 = Label(self.f1, text='Student Id : ', font='goudy 15 bold', fg='orange', bg='black').place(x=50, y=150)
 		e2 = Entry(self.f1, width=25, bd=4, bg='orange', textvariable=self.astudentt).place(x=180, y=150)
-		b1 = Button(self.f1, text='Back', font='Papyrus 10 bold', bg='orange', fg='black', width=10, bd=3,
+		b1 = Button(self.f1, text='Back', font='goudy 10 bold', bg='orange', fg='black', width=10, bd=3,
 					command=self.rm).place(x=50, y=250)
-		b1 = Button(self.f1, text='Return', font='Papyrus 10 bold', bg='orange', fg='black', width=10, bd=3,
+		b1 = Button(self.f1, text='Return', font='goudy 10 bold', bg='orange', fg='black', width=10, bd=3,
 					command=self.returnbook).place(x=200, y=250)
 		self.f1.grid_propagate(0)
 
@@ -401,16 +401,16 @@ class menu:
 		self.trees = self.create_tree(self.f1, self.list2)
 		self.trees.place(x=50, y=150)
 
-		l1 = Label(self.f1, text='Book/Student ID : ', font='Papyrus 15 bold', fg='Orange', bg='black').place(x=50,
+		l1 = Label(self.f1, text='Book/Student ID : ', font='goudy 15 bold', fg='Orange', bg='black').place(x=50,
 																											  y=30)
 		e1 = Entry(self.f1, width=20, bd=4, bg='orange', textvariable=self.aidd).place(x=280, y=35)
-		# l2=Label(self.f1,text='Student Id : ',font='papyrus 15 bold',fg='orange',bg='black').place(x=50,y=80)
+		# l2=Label(self.f1,text='Student Id : ',font='goudy 15 bold',fg='orange',bg='black').place(x=50,y=80)
 		# e2=Entry(self.f1,width=20,bd=4,bg='orange',textvariable=self.astudentt).place(x=180,y=80)
-		b1 = Button(self.f1, text='Back', bg='orange', font='Papyrus 10 bold', width=10, bd=3, command=self.rm).place(
+		b1 = Button(self.f1, text='Back', bg='orange', font='goudy 10 bold', width=10, bd=3, command=self.rm).place(
 			x=340, y=450)
-		b1 = Button(self.f1, text='Search', bg='orange', font='Papyrus 10 bold', width=10, bd=3,
+		b1 = Button(self.f1, text='Search', bg='orange', font='goudy 10 bold', width=10, bd=3,
 					command=self.searchact).place(x=40, y=450)
-		b1 = Button(self.f1, text='All', bg='orange', font='Papyrus 10 bold', width=10, bd=3,
+		b1 = Button(self.f1, text='All', bg='orange', font='goudy 10 bold', width=10, bd=3,
 					command=self.searchall).place(x=190, y=450)
 		self.f1.grid_propagate(0)
 
@@ -539,11 +539,11 @@ Top.pack(side=TOP, fill=X)
 Form = Frame(root, height=200)
 Form.pack(side=BOTTOM, pady=20)'''
 # ==============================LABELS=========================================
-lbl_title = Label(canvas, text="ADMIN   LOGIN", font=('Papyrus', 30, 'bold',), bg='black', fg='orange')
+lbl_title = Label(canvas, text="ADMIN   LOGIN", font=('goudy', 30, 'bold',), bg='black', fg='orange')
 lbl_title.place(x=500, y=100)
-lbl_username = Label(canvas, text="Username:", font=('Papyrus', 15, 'bold'), bd=4, bg='black', fg='orange')
+lbl_username = Label(canvas, text="Username:", font=('goudy', 15, 'bold'), bd=4, bg='black', fg='orange')
 lbl_username.place(x=500, y=230)
-lbl_password = Label(canvas, text="Password :", font=('Papyrus', 15, 'bold'), bd=3, bg='black', fg='orange')
+lbl_password = Label(canvas, text="Password :", font=('goudy', 15, 'bold'), bd=3, bg='black', fg='orange')
 lbl_password.place(x=500, y=330)
 lbl_text = Label(canvas)
 lbl_text.place(x=450, y=500)
@@ -556,7 +556,7 @@ password = Entry(canvas, textvariable=PASSWORD, show="*", font=(14), bg='black',
 password.place(x=650, y=330)
 
 # ==============================BUTTON WIDGETS=================================
-btn_login = Button(canvas, text="LOGIN", font=('Papyrus 15 bold'), width=25, command=Login, bg='black', fg='orange')
+btn_login = Button(canvas, text="LOGIN", font=('goudy 15 bold'), width=25, command=Login, bg='black', fg='orange')
 btn_login.place(x=500, y=400)
 btn_login.bind('<Return>', Login)
 root.mainloop()
